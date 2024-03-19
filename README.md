@@ -2,7 +2,7 @@
 
 ## Why did you make a website instead of presentation.
 
-Because I was bored, I can also convert this into presentation quickly
+Because I was bored, and I have the time. I can also convert this into presentation quickly
 
 ## Requirements
 ### Presentation
