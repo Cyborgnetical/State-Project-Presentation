@@ -8,18 +8,7 @@ body *{
 }
 
 
-.slide{
-    max-width:100vw; /* bottom comment explains why im using "max-width" instead of "width" */
-    height:100vh; /* for a dumb reason when I set any value to this it causes the width to normally overflow*/
-    /* 
-    no this does nothing to solve it. 
-    CSS is like using a curtain,
-    except it get tangled if you use it in any way so you must do some werid trickery in order to make it work 
-    */
-    box-sizing:border-box;
-    position:relative;
-    border:solid;
-}
+
 
 ::root{
    --font-size:1em;
@@ -36,6 +25,10 @@ body *{
     background-image: url("images/Sweet-Home-Alabama.webp");
     background-size: cover;
     background-position: bottom;
+
+    max-width:100vw; /* bottom comment explains why im using "max-width" instead of "width" */
+    height:75vh;
+    border-block:solid;
 }
 
 #title h1{
@@ -56,7 +49,119 @@ body *{
     font-size:0.7em;
 }
 
-/*History slide*/
+/*slides */
+.slide{
+    max-width:100vw; /* bottom comment explains why im using "max-width" instead of "width" */
+    height:100vh; /* for a dumb reason when I set any value to this it causes the width to normally overflow*/
+    /* 
+    no this does nothing to solve it. 
+    CSS is like using a curtain,
+    except it get tangled if you use it in any way so you must do some weird trickery in order to make it work 
+    */
+    box-sizing:border-box;
+    position:relative;
+    border:solid;
+
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "information"
+    "footer"
+    ;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-rows: 10% 1fr 10%;
+    
+    padding: 1%;
+    
+
+}
+.slide > *{
+    
+    
+}
+.info-card{
+    position: relative;
+    border: 2px inset grey;
+    box-shadow: 0px 0px 5px 2px grey;
+}
+.slide h1{
+    font-family: "Josefin Sans";
+}
+.slide h2{
+    font-family: "Josefin Sans";
+}
+
+.slide-header{
+    padding-inline:5%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.slide-footer{    
+    position: relative;
+    padding-left: 2%;
+    padding-block: 0.5%;
+    border: 2px inset grey;
+    box-shadow: 0px 0px 5px 2px grey;
+}
+
+/* Territory */
+
+#Territory{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    text-align: center;
+}
+
+#Territory > *{
+    display: grid;
+    grid-template-rows:15% 1fr;
+    row-gap: 5%;
+}
+#Territory p{
+    padding: 5%;
+}
+
+/*Statehood*/
+
+/*Stats*/
+
+#Stats{
+    display: grid;
+    box-sizing: border-box;
+    padding-inline: 5%;
+    box-sizing: border-box;
+}
+#Stats > *{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Stats-numbers{
+    width: 90%;
+}
+
+.Stats-bar{
+    border: 1px solid;
+    height: 20%;
+
+    transition: width 500ms;
+}
+
+/*Parks*/
+
+#Parks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    column-gap: 2%;
+}
+
+
 
 
 
@@ -76,4 +181,8 @@ body *{
 @font-face {
     font-family: Epilogue;
     src: url("Fonts/Epilogue/Epilogue-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("Fonts/Josefin Sans/JosefinSans-VariableFont_wght.ttf");
 }
