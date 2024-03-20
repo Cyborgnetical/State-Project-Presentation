@@ -161,6 +161,16 @@ body *{
     column-gap: 2%;
 }
 
+#Parks > div{
+    display: grid;
+    grid-template-rows:10% 1fr 1fr 10%;
+    justify-items: center;
+    align-items: center;
+}
+#Parks > div > span{
+    grid-row:-1;
+}
+
 
 
 
