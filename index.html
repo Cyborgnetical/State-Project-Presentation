@@ -9,13 +9,7 @@
 </head>
 
 <body>
-    <header id="mainHeader">
-        <h2 id="mainHeader-title">State Project | Alabama</h2>
-        <nav>
-            <a>About</a>
-            <a>Essay</a>
-        </nav>
-    </header>
+    <div id="jquery-header"></div>
     <div id="title">
         <h1>Alabama State</h1>
         <p style="color:white; text-shadow: 0px 0px 5px blue;">By: Jose Ibarra-Martinez</p>
@@ -244,6 +238,12 @@
     <footer>
         Some of this code will be reused to improve the NJ website
     </footer>
+    <div id="jquery-footer"></div>
+    <script src="/dependencies/jquery/jquery-3.7.1.js"></script>
+    <script defer> 
+        $("#jquery-header").load("/dependencies/header/index.html");
+        $("#jquery-footer").load("/dependencies/footer/index.html");
+    </script>
 </body>
 
 </html>
