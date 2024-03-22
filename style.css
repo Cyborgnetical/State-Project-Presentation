@@ -52,7 +52,7 @@ body *{
 /*slides */
 .slide{
     max-width:100vw; /* bottom comment explains why im using "max-width" instead of "width" */
-    height:100vh; /* for a dumb reason when I set any value to this it causes the width to normally overflow*/
+    min-height:100vh; /* for a dumb reason when I set any value to this it causes the width to normally overflow*/
     /* 
     no this does nothing to solve it. 
     CSS is like using a curtain,
@@ -155,19 +155,41 @@ body *{
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     text-align: center;
+    position: relative;
     column-gap: 2%;
 }
 
 #Parks > div{
     display: grid;
-    grid-template-rows:10% 1fr 1fr 10%;
+    
     justify-items: center;
     align-items: center;
 }
 #Parks > div > span{
-    grid-row:-1;
+    grid-row:-1 -1;
+}
+#Parks > div > img{
+    width: 80%;
 }
 
+/* Capital */
+#capital{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: stretch;
+    align-items: stretch;
+    text-align: center;
+}
+#capital > span {
+    grid-column: 1 / -1 ;
+    
+    align-items: center;
+}
+#capital > div{
+    display: grid;
+    justify-content: center;
+
+}
 
 
 
