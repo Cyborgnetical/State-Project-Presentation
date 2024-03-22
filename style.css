@@ -208,6 +208,9 @@ body *{
     grid-template-columns: 100%;
     grid-template-rows: repeat(5,1fr);
 }
+#top5 > li > img{
+    width: 25vmin;
+}
 
 
 
