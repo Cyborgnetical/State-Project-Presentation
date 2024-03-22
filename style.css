@@ -176,18 +176,21 @@ body *{
 #capital{
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 20px;
     justify-items: stretch;
     align-items: stretch;
     text-align: center;
 }
 #capital > span {
     grid-column: 1 / -1 ;
-    
+    display: grid;
     align-items: center;
+    justify-items: center;
 }
 #capital > div{
     display: grid;
     justify-content: center;
+    align-content: center;
 
 }
 
