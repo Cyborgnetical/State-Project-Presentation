@@ -35,3 +35,16 @@ edit: le site of no workings
 -   500 words MLA Format
     
 -   3 sources (minimum)
+
+## Game Plan
+-  When I get wifi I shall download all the resources
+
+-  Work constantly and skip the parties (if I can)
+
+-  If I am forced into the party I will use my phone to code
+
+-  Use the extended time to make it nice
+
+-  Reuse code later on with other projects
+
+-  I WILL WORK ON IT
