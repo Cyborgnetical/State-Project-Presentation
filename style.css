@@ -124,6 +124,43 @@ body *{
 
 /*Statehood*/
 
+#Statehood{
+    display: grid;
+    align-content: space;
+    height: 100%;
+    row-gap: 20px;
+}
+
+
+#Statehood-line{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Statehood-line  hr{
+    display:inline;
+    height: 0px;
+    width: 100%;
+}
+.Statehood-events{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-auto-flow: column;
+    justify-content:space-between;
+}
+.Statehood-events > span{
+    max-width: calc(100%/2);
+    min-width: 30px;
+    display: grid;
+    align-content: center;
+    
+}
+
+
 /*Stats*/
 
 #Stats{
@@ -207,12 +244,66 @@ body *{
     align-items: center;
     grid-template-columns: 100%;
     grid-template-rows: repeat(5,1fr);
+    row-gap: 20px;
+}
+#top5 li{
+    display: grid;
+    grid-template-areas:
+    "title img"
+    "texts img"
+    ;
+    grid-template-columns: 80% 1fr;
+    justify-items: stretch;
+    width: 90%;
+}
+#top5 li h2{
+    grid-area: title;
+    text-align: left;
+}
+#top5 li p{
+    grid-area: texts;
+    text-align: left;
 }
 #top5 > li > img{
+    grid-area: img;
     width: 25vmin;
 }
 
+/* My top 3, basically copied and pasted code */
 
+#myTop3 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 20px;
+}
+#myTop3 li{
+    display: grid;
+    grid-template-areas:
+    "title img"
+    "texts img"
+    ;
+    grid-template-columns: 80% 1fr;
+    justify-items: stretch;
+    width: 90%;
+}
+#myTop3 li h2{
+    grid-area: title;
+    text-align: left;
+}
+#myTop3 li p{
+    grid-area: texts;
+    text-align: left;
+}
+#myTop3 > li > img{
+    grid-area: img;
+    width: 25vmin;
+}
 
 
 
