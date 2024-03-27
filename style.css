@@ -279,7 +279,7 @@ body *{
     justify-items: center;
     align-items: center;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
     row-gap: 20px;
 }
 #myTop3 li{
@@ -304,6 +304,39 @@ body *{
     grid-area: img;
     width: 25vmin;
 }
+
+/* Industry */
+#industry{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    column-gap: 20px;
+
+}
+#industry *{
+    width: 100%;
+}
+
+#industry > div {
+    display: grid;
+    grid-template-rows: 10% 1fr 10%;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+#industry > div ol{
+    display: grid;
+    justify-items: center;
+    align-content:space-evenly ;
+}
+
+#industry > div ol li{
+    width: 80%;
+    
+
+}
+
+
 
 
 

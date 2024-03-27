@@ -46,5 +46,3 @@ edit: le site of no workings
 -  Use the extended time to make it nice
 
 -  Reuse code later on with other projects
-
--  I WILL WORK ON IT
