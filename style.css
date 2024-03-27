@@ -109,19 +109,25 @@ body *{
 #Territory{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50%;
     column-gap: 5%;
     text-align: center;
+    justify-items: center;
+    align-items: center;
 }
 
 #Territory > *{
     display: grid;
-    grid-template-rows:15% 1fr;
+    grid-template-rows:25% 1fr;
     row-gap: 5%;
 }
 #Territory p{
     padding: 5%;
 }
-
+#Territory img{
+    height: 200px;
+    grid-column: 1 / -1;
+}
 /*Statehood*/
 
 #Statehood{
@@ -168,8 +174,14 @@ body *{
     box-sizing: border-box;
     padding-inline: 5%;
     box-sizing: border-box;
+    align-items: center;
 }
-#Stats > *{
+#Stats img{
+    grid-column: 2;
+    grid-row: 1 / 5;
+    height: 80%;
+}
+#Stats > span{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -180,7 +192,7 @@ body *{
 
 .Stats-bar{
     border: 1px solid;
-    height: 20%;
+    min-height: 20px;
 
     transition: width 500ms;
 }
@@ -308,14 +320,19 @@ body *{
 /* Industry */
 #industry{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 25% 1fr;
     align-items: stretch;
     column-gap: 20px;
-
 }
+
+#industry img{
+    align-self: center;
+}
+
 #industry *{
     width: 100%;
 }
+
 
 #industry > div {
     display: grid;
@@ -332,8 +349,6 @@ body *{
 
 #industry > div ol li{
     width: 80%;
-    
-
 }
 
 
