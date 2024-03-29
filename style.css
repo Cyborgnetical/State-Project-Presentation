@@ -1,6 +1,7 @@
 body,html {
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 body *{
     margin:0;
@@ -420,6 +421,7 @@ body *{
 #facts5{
     display:grid; /* At this point I should have given by default all info the grid display*/
     justify-items: center;
+    grid-template-columns: 1fr 1fr;
 }
 #facts5 > li{
     width:80%;
@@ -428,11 +430,29 @@ body *{
 /* Interesting Facts*/
 
 #interesting{
-    display:grid; /* At this point I should have given by default all info the grid display*/
+    display:grid;
     justify-items: center;
 }
 #interesting > li{
     width:80%;
+}
+
+
+/*universities*/
+#universities{
+    display:grid;
+    justify-items: center;
+}
+#universities > li{
+    width:80%;
+}
+
+/* Other Schools and more*/
+
+#schools{
+    display:grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
 }
 
 
