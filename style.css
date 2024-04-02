@@ -455,6 +455,11 @@ body *{
     grid-template-columns: 1fr 1fr;
 }
 
+/* Lazyed out on the last slide, not enough time and barely stable wifi */
+
+#summary{
+    text-align: center;
+}
 
 #mainHeader{
     display:flex;
